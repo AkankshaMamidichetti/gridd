@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+      background: #fff;
+      font-family: sans-serif;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    
+    .parent{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 200px);
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        grid-template-areas: 
+        'item1 item2 item3 item4 item5'
+        'item6 item7 item8 item9  item10' 
+        'item11 item12 item13 item14 item10'
+        'item15 item16 item13 item17 item18'; 
+     }
+     .parent img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      padding-top:10px ;
+    }
+    .parent > div {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        display: grid;
+        margin: 10px;
+    }
+    .img1{
+        grid-area: item1;
+        
+    }
+    .img2{
+        grid-area: item2;
+        
+    }
+    .img3{
+        grid-area: item3;
+        
+    }
+    .img4{
+        grid-area: item4;
+        
+    }
+    .img5{
+        grid-area: item5;
+        
+    }
+    .img6{
+        grid-area: item6;
+        
+    }
+    .img7{
+        grid-area: item7;
+    }
+    .img8{
+        grid-area: item8;
+    }
+    .img9{
+        grid-area: item9;
+    }
+    .img10{
+        grid-area: item10;
+    }
+    .img11{
+        grid-area: item11;
+    }
+    .img12{
+        grid-area: item12;
+    }
+    .img13{
+        grid-area: item13;
+        /* height:100vh; */
+    }
+    .img14{
+        grid-area: item14;
+    }
+    .img15{
+        grid-area: item15;
+    }
+    .img16{
+        grid-area: item16;
+    }
+    .img17{
+        grid-area: item17;
+    }
+    .img18{
+        grid-area: item18;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="img1"><img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="aaa"></div>
+        <div class="img2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyWoBiUx4vdA4ApwQhFJrYiE6B5Unrj6xv3A&s" alt="bbb"></div>
+        <div class="img3"><img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" alt="cc"></div>
+        <div class="img4"><img src="https://media.istockphoto.com/id/2181735944/photo/natural-mountains-landscapes.jpg?b=1&s=612x612&w=0&k=20&c=7WJMhHseLhVBEDa8N7ww7J_oqm_w_PlvUlxZPsmF3UI=" alt="dd"></div>
+        <div class="img5"><img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="ee"></div>
+        <div class="img6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrvE85eW9nMQbakX11jPL2XybGmNTIlhnKw&s" alt="ff"></div>
+        <div class="img7"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScrhe8qHxRmRH91XsS1nkXQKfFXRAi-fhRMCRo-vIQT0PTLqFh3kMMyO22XZWnav8R-EI&usqp=CAU" alt="gg"></div>
+        <div class="img8"><img src="https://static.toiimg.com/thumb/104555810/104555810.jpg?height=746&width=420&resizemode=76&imgsize=200956" alt="hh"></div>
+        <div class="img9"><img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D" alt="iii"></div>
+        <div class="img10"><img src="https://static.toiimg.com/thumb/82763468/82763468.jpg?height=746&width=420&resizemode=76&imgsize=214565" alt="jjj"></div>
+        <div class="img11"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiGui-nzkPn4KAUAp6tiuQ9UsPCbTtZJsXEg&s" alt="kkk"></div>
+        <div class="img12"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwZZJmlZJdlRrWRyMzmwiNJtrass_vP3Axaw&s" alt="ll"></div>
+        <div class="img13"><img src="https://i.pinimg.com/236x/f5/c2/b7/f5c2b709516e107b5b6d10f0a1f03404.jpg" alt="mm"></div>
+        <div class="img14"><img src="https://i.pinimg.com/236x/67/1e/70/671e7048c85883fbcfb3aff70282e094.jpg" alt="nn"></div>
+        <div class="img15"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RgoNrHq5hpbqCfDLHT40jaHr65jZK9ciKA&s" alt="oo"></div>
+        <div class="img16"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTtKtS1S6yyxE3ERh6nBdl2uujGdRNFT9BUw&s" alt="pp"></div>
+        <div class="img17"><img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.jpg" alt="qq"></div>
+        <div class="img18"><img src="https://www.befunky.com/images/wp/wp-2023-11-nature-photography-featured.jpg?auto=avif,webp&format=jpg&width=1200&crop=16:9" alt="rrr"></div>
+        
+    </div>
+</body>
+</html>
